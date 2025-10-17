@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.post("/api/notification", (req, res) => {
   const vtexNotification = req.body;
-  console.log("Notificación VTEX recibida:", vtexNotification.idSKU);
+  console.log("Notificación VTEX recibida:", vtexNotification);
 
   // 1. Validar autenticación (si aplica)
   // 2. Enviar a la cola de procesamiento (paso 2)
