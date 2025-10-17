@@ -5,6 +5,4 @@ services:
     image: sync-products
     ports:
       - "3000:3000"
-    env_file:
-      - .env.example
     restart: always
